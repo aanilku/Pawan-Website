@@ -31,7 +31,7 @@ export default function About() {
                         <div className="row">
                             <div className="col-lg-6">
                                 <div className="page-banner-content">
-                                    <h1>About Us</h1>
+                                    <h1>About Us </h1>
                                     <ul className="breadcrumb-link">
                                         <li><a href="index.html">Home</a></li>
                                         <li><i className="far fa-long-arrow-right"></i></li>

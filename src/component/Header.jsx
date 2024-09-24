@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 export default function Header() {
@@ -10,7 +11,7 @@ export default function Header() {
         <div className="search-header-inner">
             {/* <!--=== Site Branding  ===--> */}
             <div className="site-branding">
-                <a href="index.html" className="brand-logo"><img src="/src/assets/images/logo/logo-main.png" alt="Logo" /></a>
+                <Link to="/" className="brand-logo"><img src="/src/assets/images/logo/logo-main.png" alt="Logo" /></Link>
             </div>
             {/* <!--===  Product Search Category  ===--> */}
             <div className="product-search-category">
@@ -37,7 +38,7 @@ export default function Header() {
                 </div>
                 <div className="info">
                     <span>24/7 Support</span>
-                    <h5><a href="tel:+941234567894">+94 123 4567 894</a></h5>
+                    <h5><Link to="tel:+941234567894">+94 123 4567 894</Link></h5>
                 </div>
             </div>
         </div>
@@ -49,32 +50,32 @@ export default function Header() {
         {/* <!--=== Primary Menu ===--> */}
         <div className="primary-menu">
             <div className="site-branding d-lg-none d-block">
-                <a href="index.html" className="brand-logo"><img src="/src/assets/images/logo/logo-main.png" alt="Logo" /></a>
+                <Link to="/" className="brand-logo"><img src="/src/assets/images/logo/logo-main.png" alt="Logo" /></Link>
             </div>
             {/* <!--=== Nav Inner Menu ===--> */}
             <div className="nav-inner-menu">
                 {/* <!--=== Main Category ===--> */}
                 <div className="main-categories-wrap d-none d-lg-block">
-                    <a className="categories-btn-active" href="#">
+                    <Link className="categories-btn-active" to="/">
                         <span className="fas fa-list"></span><span className="text">Products Category<i className="fas fa-angle-down"></i></span>
-                    </a>
+                    </Link>
                     <div className="categories-dropdown-wrap categories-dropdown-active">
                         <div className="categori-dropdown-item">
                             <ul>
                                 <li>
-                                    <a href="shops.html"> <img src="/src/assets/images/icon/shirt.png" alt="Shirts" />Man Shirts</a>
+                                    <Link to="/shop"> <img src="/src/assets/images/icon/shirt.png" alt="Shirts" />Man Shirts</Link>
                                 </li>
                                 <li>
-                                    <a href="shops.html"> <img src="/src/assets/images/icon/denim.png" alt="Jeans" />Denim Jeans</a>
+                                    <Link to="/shop"> <img src="/src/assets/images/icon/denim.png" alt="Jeans" />Denim Jeans</Link>
                                 </li>
                                 <li>
-                                    <a href="shops.html"> <img src="/src/assets/images/icon/suit.png" alt="Suit" />Casual Suit</a>
+                                    <Link to="/shop"> <img src="/src/assets/images/icon/suit.png" alt="Suit" />Casual Suit</Link>
                                 </li>
                                 <li>
-                                    <a href="shops.html"> <img src="/src/assets/images/icon/dress.png" alt="Dress" />Summer Dress</a>
+                                    <Link to="/shop"> <img src="/src/assets/images/icon/dress.png" alt="Dress" />Summer Dress</Link>
                                 </li>
                                 <li>
-                                    <a href="shops.html"> <img src="/src/assets/images/icon/sweaters.png" alt="Sweaters" />Sweaters</a>
+                                    <Link to="/shop"> <img src="/src/assets/images/icon/sweaters.png" alt="Sweaters" />Sweaters</Link>
                                 </li>
                             </ul>
                         </div>
@@ -82,7 +83,7 @@ export default function Header() {
                             <div className="categori-dropdown-item">
                                 <ul>
                                     <li>
-                                        <a href="#"><img src="/src/assets/images/icon/jacket.png" alt="Jackets" />Jackets</a>
+                                        <Link to="#"><img src="/src/assets/images/icon/jacket.png" alt="Jackets" />Jackets</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -115,34 +116,34 @@ export default function Header() {
                                 <div className="tab-pane fade show active" id="nav1" role="tabpanel">
                                     <nav className="main-menu">
                                         <ul>
-                                            <li className="menu-item has-children"><a href="#">Home<span className="dd-trigger"><i className="far fa-angle-down"></i></span></a>
+                                            <li className="menu-item has-children"><Link to="#">Home<span className="dd-trigger"><i className="far fa-angle-down"></i></span></Link>
                                                 <ul className="sub-menu">
-                                                    <li><a href="index.html">Home 01</a></li>
-                                                    <li><a href="index-2.html">Home 02</a></li>
+                                                    <li><Link to="/">Home 01</Link></li>
+                                                    <li><Link to="/indexPage">Home 02</Link></li>
                                                 </ul>
                                             </li>
-                                            <li className="menu-item has-children"><a href="#">Shop<span className="dd-trigger"><i className="far fa-angle-down"></i></span></a>
+                                            <li className="menu-item has-children"><Link to="#">Shop<span className="dd-trigger"><i className="far fa-angle-down"></i></span></Link>
                                                 <ul className="sub-menu">
-                                                    <li><a href="shops.html">Our Shop</a></li>
-                                                    <li><a href="shop-details.html">Product Details</a></li>
-                                                    <li><a href="cart.html">Cart</a></li>
-                                                    <li><a href="checkout.html">Checkout</a></li>
-                                                    <li><a href="wishlists.html">Wishlist</a></li>
+                                                    <li><Link to="/shop">Our Shop</Link></li>
+                                                    <li><Link to="/shopDetails">Product Details</Link></li>
+                                                    <li><Link to="/cart">Cart</Link></li>
+                                                    <li><Link to="/checkout">Checkout</Link></li>
+                                                    {/* <li><Link to="wishlists.html">Wishlist</Link></li> */}
                                                 </ul>
                                             </li>
-                                            <li className="menu-item has-children"><a href="#">Blog<span className="dd-trigger"><i className="far fa-angle-down"></i></span></a>
+                                            <li className="menu-item has-children"><Link to="#">Blog<span className="dd-trigger"><i className="far fa-angle-down"></i></span></Link>
                                                 <ul className="sub-menu">
-                                                    <li><a href="blogs.html">Our Blog</a></li>
-                                                    <li><a href="blog-details.html">Blog Details</a></li>
+                                                    <li><Link to="/blogs">Our Blog</Link></li>
+                                                    <li><Link to="/blogsDetails">Blog Details</Link></li>
                                                 </ul>
                                             </li>
-                                            <li className="menu-item has-children"><a href="#">Pages<span className="dd-trigger"><i className="far fa-angle-down"></i></span></a>
+                                            <li className="menu-item has-children"><Link to="#">Pages<span className="dd-trigger"><i className="far fa-angle-down"></i></span></Link>
                                                 <ul className="sub-menu">
-                                                    <li><a href="about-us.html">About Us</a></li>
-                                                    <li><a href="faq.html">Faqs</a></li>
+                                                    <li><Link to="/about">About Us</Link></li>
+                                                    <li><Link to="/faq">Faqs</Link></li>
                                                 </ul>
                                             </li>
-                                            <li className="menu-item"><a href="contact.html">Contact</a></li>
+                                            <li className="menu-item"><Link to="/contact">Contact</Link></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -150,19 +151,19 @@ export default function Header() {
                                     <div className="categori-dropdown-item">
                                         <ul>
                                             <li>
-                                                <a href="shops.html"> <img src="/src/assets/images/icon/shirt.png" alt="Shirts" />Man Shirts</a>
+                                                <Link to="/shop"> <img src="/src/assets/images/icon/shirt.png" alt="Shirts" />Man Shirts</Link>
                                             </li>
                                             <li>
-                                                <a href="shops.html"> <img src="/src/assets/images/icon/denim.png" alt="Jeans" />Denim Jeans</a>
+                                                <Link to="/shop"> <img src="/src/assets/images/icon/denim.png" alt="Jeans" />Denim Jeans</Link>
                                             </li>
                                             <li>
-                                                <a href="shops.html"> <img src="/src/assets/images/icon/suit.png" alt="Suit" />Casual Suit</a>
+                                                <Link to="/shop"> <img src="/src/assets/images/icon/suit.png" alt="Suit" />Casual Suit</Link>
                                             </li>
                                             <li>
-                                                <a href="shops.html"> <img src="/src/assets/images/icon/dress.png" alt="Dress" />Summer Dress</a>
+                                                <Link to="/shop"> <img src="/src/assets/images/icon/dress.png" alt="Dress" />Summer Dress</Link>
                                             </li>
                                             <li>
-                                                <a href="shops.html"> <img src="/src/assets/images/icon/sweaters.png" alt="Sweaters" />Sweaters</a>
+                                                <Link to="/shop"> <img src="/src/assets/images/icon/sweaters.png" alt="Sweaters" />Sweaters</Link>
                                             </li>
                                         </ul>
                                     </div>
@@ -176,40 +177,40 @@ export default function Header() {
                             </div>
                             <div className="info">
                                 <span>24/7 Support</span>
-                                <h5><a href="tel:+941234567894">+94 123 4567 894</a></h5>
+                                <h5><Link to="tel:+941234567894">+94 123 4567 894</Link></h5>
                             </div>
                         </div>
                         {/* <!--=== Main Menu ===--> */}
                         <nav className="main-menu d-none d-lg-block">
                             <ul>
-                                <li className="menu-item has-children"><a href="#">Home<span className="dd-trigger"><i className="far fa-angle-down"></i></span></a>
+                                <li className="menu-item has-children"><Link to="#">Home<span className="dd-trigger"><i className="far fa-angle-down"></i></span></Link>
                                     <ul className="sub-menu">
-                                        <li><a href="index.html">Home 01</a></li>
-                                        <li><a href="index-2.html">Home 02</a></li>
+                                        <li><Link to="/">Home 01</Link></li>
+                                        <li><Link to="/indexPage">Home 02</Link></li>
                                     </ul>
                                 </li>
-                                <li className="menu-item has-children"><a href="#">Shop<span className="dd-trigger"><i className="far fa-angle-down"></i></span></a>
+                                <li className="menu-item has-children"><Link to="#">Shop<span className="dd-trigger"><i className="far fa-angle-down"></i></span></Link>
                                     <ul className="sub-menu">
-                                        <li><a href="shops.html">Our Shop</a></li>
-                                        <li><a href="shop-details.html">Product Details</a></li>
-                                        <li><a href="cart.html">Cart</a></li>
-                                        <li><a href="checkout.html">Checkout</a></li>
-                                        <li><a href="wishlists.html">Wishlist</a></li>
+                                        <li><Link to="/shop">Our Shop</Link></li>
+                                        <li><Link to="/shopDetails">Product Details</Link></li>
+                                        <li><Link to="/cart">Cart</Link></li>
+                                        <li><Link to="/checkout">Checkout</Link></li>
+                                        {/* <li><Link to="wishlists.html">Wishlist</Link></li> */}
                                     </ul>
                                 </li>
-                                <li className="menu-item has-children"><a href="#">Blog<span className="dd-trigger"><i className="far fa-angle-down"></i></span></a>
+                                <li className="menu-item has-children"><Link to="#">Blog<span className="dd-trigger"><i className="far fa-angle-down"></i></span></Link>
                                     <ul className="sub-menu">
-                                        <li><a href="blogs.html">Our Blog</a></li>
-                                        <li><a href="blog-details.html">Blog Details</a></li>
+                                        <li><Link to="/blogs">Our Blog</Link></li>
+                                        <li><Link to="/blogsDetails">Blog Details</Link></li>
                                     </ul>
                                 </li>
-                                <li className="menu-item has-children"><a href="#">Pages<span className="dd-trigger"><i className="far fa-angle-down"></i></span></a>
+                                <li className="menu-item has-children"><Link to="#">Pages<span className="dd-trigger"><i className="far fa-angle-down"></i></span></Link>
                                     <ul className="sub-menu">
-                                        <li><a href="about-us.html">About Us</a></li>
-                                        <li><a href="faq.html">Faqs</a></li>
+                                        <li><Link to="/about">About Us</Link></li>
+                                        <li><Link to="/faq">Faqs</Link></li>
                                     </ul>
                                 </li>
-                                <li className="menu-item"><a href="contact.html">Contact</a></li>
+                                <li className="menu-item"><Link to="/contact">Contact</Link></li>
                             </ul>
                         </nav>
                     </div>

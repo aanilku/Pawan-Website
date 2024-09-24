@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -17,16 +18,16 @@ export default function Footer() {
                                     {/* <!--=== Footer Widget  ===--> */}
                                     <div className="footer-widget about-company-widget mb-40 wow fadeInUp">
                                         <div className="widget-content">
-                                            <a href="index.html" className="footer-logo"><img src="/src/assets/images/logo/logo-main.png" alt="Brand Logo" /></a>
+                                            <Link to="/" className="footer-logo"><img src="/src/assets/images/logo/logo-main.png" alt="Brand Logo" /></Link>
                                             <p>Pesco is an exciting International brand we provide high quality cloths</p>
                                             <ul className="ct-info-list mb-30">
                                                 <li>
                                                     <i className="fas fa-envelope"></i>
-                                                    <a href="mailto:info@mydomain.com">info@mydomain.com</a>
+                                                    <Link to="mailto:info@mydomain.com">info@mydomain.com</Link>
                                                 </li>
                                                 <li>
                                                     <i className="fas fa-phone-alt"></i>
-                                                    <a href="mailto:info@mydomain.com">info@mydomain.com</a>
+                                                    <Link to="mailto:info@mydomain.com">info@mydomain.com</Link>
                                                 </li>
                                             </ul>
                                             <ul className="social-link">
@@ -34,16 +35,16 @@ export default function Footer() {
                                                     <span>Find Us:</span>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i className="fab fa-facebook-f"></i></a>
+                                                    <Link to="#"><i className="fab fa-facebook-f"></i></Link>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i className="fab fa-instagram"></i></a>
+                                                    <Link to="#"><i className="fab fa-instagram"></i></Link>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i className="fab fa-linkedin-in"></i></a>
+                                                    <Link to="#"><i className="fab fa-linkedin-in"></i></Link>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i className="fab fa-twitter"></i></a>
+                                                    <Link to="#"><i className="fab fa-twitter"></i></Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -55,11 +56,11 @@ export default function Footer() {
                                         <div className="widget-content">
                                             <h4 className="widget-title">Customer Services</h4>
                                             <ul className="widget-menu">
-                                                <li><img src="/src/assets/images/icon/star-3.svg" alt="star icon" /><a href="#">Collections &amp; Delivery</a></li>
-                                                <li><img src="/src/assets/images/icon/star-3.svg" alt="star icon" /><a href="#">Returns &amp; Refunds</a></li>
-                                                <li><img src="/src/assets/images/icon/star-3.svg" alt="star icon" /><a href="#">Terms &amp; Conditions</a></li>
-                                                <li><img src="/src/assets/images/icon/star-3.svg" alt="star icon" /><a href="#">Delivery Return</a></li>
-                                                <li><img src="/src/assets/images/icon/star-3.svg" alt="star icon" /><a href="#">Store Locations</a></li>
+                                                <li><img src="/src/assets/images/icon/star-3.svg" alt="star icon" /><Link to="#">Collections &amp; Delivery</Link></li>
+                                                <li><img src="/src/assets/images/icon/star-3.svg" alt="star icon" /><Link to="#">Returns &amp; Refunds</Link></li>
+                                                <li><img src="/src/assets/images/icon/star-3.svg" alt="star icon" /><Link to="#">Terms &amp; Conditions</Link></li>
+                                                <li><img src="/src/assets/images/icon/star-3.svg" alt="star icon" /><Link to="#">Delivery Return</Link></li>
+                                                <li><img src="/src/assets/images/icon/star-3.svg" alt="star icon" /><Link to="#">Store Locations</Link></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -70,11 +71,11 @@ export default function Footer() {
                                         <div className="widget-content">
                                             <h4 className="widget-title">Quick Link</h4>
                                             <ul className="widget-menu">
-                                                <li><img src="/src/assets/images/icon/star-3.svg" alt="star icon" /><a href="#">Privacy Policy</a></li>
-                                                <li><img src="/src/assets/images/icon/star-3.svg" alt="star icon" /><a href="#">Terms Of Use</a></li>
-                                                <li><img src="/src/assets/images/icon/star-3.svg" alt="star icon" /><a href="#">FAQ</a></li>
-                                                <li><img src="/src/assets/images/icon/star-3.svg" alt="star icon" /><a href="#">Contact</a></li>
-                                                <li><img src="/src/assets/images/icon/star-3.svg" alt="star icon" /><a href="#">Login / Register</a></li>
+                                                <li><img src="/src/assets/images/icon/star-3.svg" alt="star icon" /><Link to="#">Privacy Policy</Link></li>
+                                                <li><img src="/src/assets/images/icon/star-3.svg" alt="star icon" /><Link to="#">Terms Of Use</Link></li>
+                                                <li><img src="/src/assets/images/icon/star-3.svg" alt="star icon" /><Link to="#">FAQ</Link></li>
+                                                <li><img src="/src/assets/images/icon/star-3.svg" alt="star icon" /><Link to="#">Contact</Link></li>
+                                                <li><img src="/src/assets/images/icon/star-3.svg" alt="star icon" /><Link to="#">Login / Register</Link></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -89,8 +90,8 @@ export default function Footer() {
                                                     <img src="/src/assets/images/footer/recent-post-1.png" alt="post thumb" />
                                                 </div>
                                                 <div className="content">
-                                                    <h4><a href="blog-details.html">Tips on Finding Affordable Fashion Gems Online</a></h4>
-                                                    <span><a href="blog-details.html">July 11, 2023</a></span>
+                                                    <h4><Link to="/blogsDetails">Tips on Finding Affordable Fashion Gems Online</Link></h4>
+                                                    <span><Link to="/blogsDetails">July 11, 2023</Link></span>
                                                 </div>
                                             </div>
                                             <div className="recent-post-item">
@@ -98,8 +99,8 @@ export default function Footer() {
                                                     <img src="/src/assets/images/footer/recent-post-2.png" alt="post thumb" />
                                                 </div>
                                                 <div className="content">
-                                                    <h4><a href="blog-details.html">Mastering the Art of Fashion E-commerce Marketing</a></h4>
-                                                    <span><a href="blog-details.html">JUly 11, 2024</a></span>
+                                                    <h4><Link to="/blogsDetails">Mastering the Art of Fashion E-commerce Marketing</Link></h4>
+                                                    <span><Link to="/blogsDetails">JUly 11, 2024</Link></span>
                                                 </div>
                                             </div>
                                             <div className="recent-post-item">
@@ -107,8 +108,8 @@ export default function Footer() {
                                                     <img src="/src/assets/images/footer/recent-post-3.png" alt="post thumb" />
                                                 </div>
                                                 <div className="content">
-                                                    <h4><a href="blog-details.html">Must-Have Trends You Can Shop Online Now</a></h4>
-                                                    <span><a href="blog-details.html">July 11, 2024</a></span>
+                                                    <h4><Link to="/blogsDetails">Must-Have Trends You Can Shop Online Now</Link></h4>
+                                                    <span><Link to="/blogsDetails">July 11, 2024</Link></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -128,7 +129,7 @@ export default function Footer() {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="payment-method text-lg-end">
-                                        <a href="#"><img src="/src/assets/images/footer/payment-method.png" alt="payment-method" /></a>
+                                        <Link to="#"><img src="/src/assets/images/footer/payment-method.png" alt="payment-method" /></Link>
                                     </div>
                                 </div>
                             </div>
