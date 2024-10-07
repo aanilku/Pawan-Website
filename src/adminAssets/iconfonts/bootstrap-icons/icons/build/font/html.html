@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from www.spruko.com/demo/valex/Valex/assets/iconfonts/bootstrap-icons/icons/build/font/html.hbs by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Sep 2023 19:38:57 GMT -->
+<head>
+  <meta charset="utf-8">
+  <title>{{ name }}</title>
+
+  <style>
+    .icons {
+      display: grid;
+      max-width: 100%;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr) );
+      gap: 1.25rem;
+    }
+    .icon {
+      background-color: var(--bs-light);
+      border-radius: .25rem;
+    }
+    .bi {
+      margin: .25rem;
+      font-size: 2.5rem;
+    }
+    .label {
+      font-family: var(--bs-font-monospace);
+    }
+    .label {
+      display: inline-block;
+      width: 100%;
+      overflow: hidden;
+      padding: .25rem;
+      font-size: .625rem;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  </style>
+
+  <link rel="stylesheet" href="../../../../../../../../../assets/css/bootstrap.min.html">
+  <link rel="stylesheet" href="%7b%7b%20name%20%7d%7d.html">
+</head>
+<body class="text-center">
+
+  <h1>{{ name }}</h1>
+
+  <div class="icons">
+  {{# each assets }}
+    <div class="icon">
+      <{{ ../tag }} class="{{ ../prefix }} {{ ../prefix }}-{{ @key }}"></{{ ../tag }}>
+      <div class="label">{{ @key }}</div>
+    </div>
+  {{/ each }}
+  </div>
+
+</body>
+
+<!-- Mirrored from www.spruko.com/demo/valex/Valex/assets/iconfonts/bootstrap-icons/icons/build/font/html.hbs by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Sep 2023 19:38:58 GMT -->
+</html>

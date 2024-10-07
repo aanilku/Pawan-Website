@@ -1,5 +1,5 @@
 
-export default function About() {
+export default function About(prop) {
   return (
     <div>
   <main className="main-bg">    
@@ -35,7 +35,7 @@ export default function About() {
                                     <ul className="breadcrumb-link">
                                         <li><a href="index.html">Home</a></li>
                                         <li><i className="far fa-long-arrow-right"></i></li>
-                                        <li className="active">About Us</li>
+                                        <li className="active">About Us {prop.titile}</li>
                                     </ul>
                                 </div>
                             </div>
